@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" href="assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Century Gothic:wght@400;600&display=swap" rel="stylesheet">
+    <script src="achievements.js"></script>
+    <script src="menu.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            registerPageVisit('index.html');
+        });
+    </script>
+    <title>ПРИКЛАДНАЯ ИНФОРМАТИКА | ФБКИ</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav__logo">
+            <a href="index.html"><img src="assets/logo.svg" alt="logo" /></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="about.html">О нас</a></li>
+            <li class="link"><a href="profiles.html">Профили обучения</a></li>
+            <li class="link"><a href="games.html">Тесты и игры</a></li>
+            <li class="link"><a href="#footer">Контакты</a></li>
+            <li class="link"><a href="login/profile.php">Личный кабинет</a></li>
+        </ul>
+        <a class="btn_des" href="login/register.php" class="btn">Зарегистрироваться</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav">
+            <ul class="mobile-nav__links">
+                <li class="link"><a href="../about.html">О нас</a></li>
+                <li class="link"><a href="../profiles.html">Профили обучения</a></li>
+                <li class="link"><a href="../games.html">Тесты и игры</a></li>
+                <li class="link"><a href="#footer">Контакты</a></li>
+                <li class="link"><a href="../login/profile.php">Личный кабинет</a></li>
+            </ul>
+            <a href="../login/register.php" class="btn">Зарегистрироваться</a>
+        </div>
+    </nav>
+
+    <header class="section__container header__container header__container__main">
+        <div class="header__content">
+            <h4>Иркутский государственный университет <br> Факультет бизнес-коммуникаций и информатики</h4>
+            <h1>НАПРАВЛЕНИЕ «ПРИКЛАДНАЯ ИНФОРМАТИКА»</h1>
+            <p>
+                Откройте для себя профили обучения нашего <br> направления, пройдите тест на определение <br>профиля,
+                попробуйте игры и начните свое <br>обучение в IT!
+            </p>
+            <a href="#task__container" class="btn">НАЧАТЬ ИЗУЧАТЬ</a>
+        </div>
+        <div class="header__image">
+            <img src="assets/3d.svg" alt="header" />
+        </div>
+        <div class="bg__blur"></div>
+    </header>
+
+    <section class="section__container task__container" id="task__container">
+        <div class="task__header">
+            <h2 class="section__header">Не знаете, что вам подходит?<br>Выберите, что в первую очередь хотите изучить!
+            </h2>
+        </div>
+        <div class="section__image">
+            <img src="assets/finger.svg" class="finger" alt="finger" />
+        </div>
+        <div class="task__grid">
+            <div class="task__card">
+                <span><img src="assets/first.svg" alt="first"></i></span>
+                <h4>Знакомство</h4>
+                <p>
+                    Познакомтесь с профилями подготовки на направлении «Прикладная информатика»
+                </p>
+                <a href="profiles.html">Познакомиться <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="task__card">
+                <span><img src="assets/second.svg" alt="second"></i></span>
+                <h4>Тестирование</h4>
+                <p>
+                    Пройдите тест на подходящий профиль обучения: Прикладная информатика в дизайне или Разработка
+                    программного обеспечения
+                </p>
+                <a href="games/test.html">Пройти <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="task__card">
+                <span><img src="assets/third.svg" alt="third"></i></span>
+                <h4>Задания</h4>
+                <p>
+                    Выполните задания по тематикам профилей, будь то задания на программирование или дизайн
+                </p>
+                <a href="games.html">Выполнить <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section__container profile__container">
+
+        <h2 class="section__header profile__header">ПРОФИЛИ НАПРАВЛЕНИЯ</h2>
+        <div class="profile__grid">
+            <div class="profile__card">
+                <div class="profile__card__content" id="profile__container">
+                    <h4>ПИ В ДИЗАЙНЕ</h4>
+                    <h3></h3>
+                    <p>
+                        ВЕБ-ДИЗАЙН
+                    </p>
+                    <p>
+                        3Д-ДИЗАЙН
+                    </p>
+                    <p>
+                        АЙДЕНТИКА
+                    </p>
+                    <p>
+                        ГЕЙМДИЗАЙН
+                    </p>
+                    <p>
+                        ОСНОВЫ ИНФОГРАФИКИ
+                    </p>
+                    <p>
+                        ВИДЕОМОНТАЖ
+                    </p>
+                </div>
+
+                <a href="profiles.html" class="btn profile__btn">Подробнее</a>
+            </div>
+            <div class="profile__card">
+                <div class="profile__card__content">
+                    <h4>РАЗРАБОТКА ПО</h4>
+                    <h3></h3>
+                    <p>
+                        ВЕБ-РАЗРАБОТКА
+                    </p>
+                    <p>
+                        ПРОГРАММИРОВАНИЕ
+                    </p>
+                    <p>
+                        МОБИЛЬНАЯ РАЗРАБОТКА
+                    </p>
+                    <p>
+                        КОМПЬЮТЕРНОЕ ЗРЕНИЕ
+                    </p>
+                    <p>
+                        ИНТЕРНЕТ ВЕЩЕЙ
+                    </p>
+                    <p>
+                        AR-VR
+                    </p>
+                </div>
+                <a href="profiles.html" class="btn profile__btn">Подробнее</a>
+            </div>
+
+        </div>
+        <div class="bg__blur__2"></div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo"><img src="assets/logo2.svg" alt="logo" /></div>
+
+                <div class="footer-description">
+                    Будьте в курсе всех новостей!<br>
+                    Мероприятия, обновления, полезная информация
+                </div>
+                <div class="footer-input-container">
+                    <input type="email" placeholder="Введите ваш email">
+                    <button>Подписаться</button>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://vk.com/fsirigu" target="_blank">
+                        <img src="assets/vk.svg">
+                    </a>
+                    <a href="https://web.telegram.org/#/im?p=@fbki_isu" target="_blank">
+                        <img src="assets/tg.svg">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCyPYCqcUuWRPH3dFAS7wP5Q" target="_blank">
+                        <img src="assets/yt.svg">
+                    </a>
+                </div>
+                <div class="address">
+                    <div>Иркутск, ул.Лермонтова 126,
+                        6-й корпус ИГУ</div>
+                    <div>+7 (3952) 42‑64‑17
+                    </div>
+                    <div><a href="mailto:dekanat@fbki.isu.ru">dekanat@fbki.isu.ru</a></div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">1</span>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">2</span>
+                        <a href="about.html">О нас</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">3</span>
+                        <a href="profiles.html">Профили обучения</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">4</span>
+                        <a href="games.html">Тесты и игры</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">5</span>
+                        <a href="login/profile.php">Личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

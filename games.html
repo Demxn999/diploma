@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задания и игры</title>
+    <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Century Gothic:wght@400;600&display=swap" rel="stylesheet">
+    <script src="achievements.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            registerPageVisit('games.html');
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__logo">
+            <a href="index.html"><img src="assets/logo.svg" alt="logo" /></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="about.html">О нас</a></li>
+            <li class="link"><a href="profiles.html">Профили обучения</a></li>
+            <li class="link"><a href="games.html">Тесты и игры</a></li>
+            <li class="link"><a href="#footer">Контакты</a></li>
+            <li class="link"><a href="login/profile.php">Личный кабинет</a></li>
+        </ul>
+        <a class="btn_des" href="login/register.php" class="btn">Зарегистрироваться</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav">
+            <ul class="mobile-nav__links">
+                <li class="link"><a href="../about.html">О нас</a></li>
+                <li class="link"><a href="../profiles.html">Профили обучения</a></li>
+                <li class="link"><a href="../games.html">Тесты и игры</a></li>
+                <li class="link"><a href="#footer">Контакты</a></li>
+                <li class="link"><a href="../login/profile.php">Личный кабинет</a></li>
+            </ul>
+            <a href="../login/register.php" class="btn">Зарегистрироваться</a>
+        </div>
+    </nav>
+    <main>
+        <section class="cards-container">
+            <a href="games/test.html" class="card">
+                <img src="assets/first.jpg" alt="Изображение 1">
+                <div class="card-text">Тестирование</div>
+            </a>
+            <a href="games/programming_second.html" class="card">
+                <img src="assets/second.jpg" alt="Изображение 2">
+                <div class="card-text">Игра "Вышибала"</div>
+            </a>
+            <a href="games/programming.html" class="card">
+                <img src="assets/third.jpg" alt="Изображение 3">
+                <div class="card-text">Задание по коду</div>
+            </a>
+            <a href="games/design.html" class="card">
+                <img src="assets/fourth.webp" alt="Изображение 4">
+                <div class="card-text">Угадай логотип</div>
+            </a>
+            <a href="games/design_second.html" class="card">
+                <img src="assets/fifth.jpg" alt="Изображение 5">
+                <div class="card-text">Угадай шрифтовую пару</div>
+            </a>
+            <a href="games/quiz.html" class="card">
+                <img src="assets/sixth.jpg" alt="Изображение 6">
+                <div class="card-text">Проверка знаний</div>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo"><img src="assets/logo2.svg" alt="logo" /></div>
+
+                <div class="footer-description">
+                    Будьте в курсе всех новостей!<br>
+                    Мероприятия, обновления, полезная информация
+                </div>
+                <div class="footer-input-container">
+                    <input type="email" placeholder="Введите ваш email">
+                    <button>Подписаться</button>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://vk.com/fsirigu" target="_blank">
+                        <img src="assets/vk.svg">
+                    </a>
+                    <a href="https://web.telegram.org/#/im?p=@fbki_isu" target="_blank">
+                        <img src="assets/tg.svg">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCyPYCqcUuWRPH3dFAS7wP5Q" target="_blank">
+                        <img src="assets/yt.svg">
+                    </a>
+                </div>
+                <div class="address">
+                    <div>Иркутск, ул.Лермонтова 126,
+                        6-й корпус ИГУ</div>
+                    <div>+7 (3952) 42‑64‑17
+                    </div>
+                    <div><a href="mailto:dekanat@fbki.isu.ru">dekanat@fbki.isu.ru</a></div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">1</span>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">2</span>
+                        <a href="about.html">О нас</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">3</span>
+                        <a href="profiles.html">Профили обучения</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">4</span>
+                        <a href="games.html">Тесты и игры</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">5</span>
+                        <a href="login/profile.php">Личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

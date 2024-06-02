@@ -1,0 +1,104 @@
+.container {
+    margin: 0 auto 150px auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.font-pairs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pair.selected {
+    border-color: #4caf50;
+    background-color: #e8f5e9;
+}
+
+.font-sample {
+    margin-bottom: 5px;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+.font-comic-sans {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.font-arial {
+    font-family: 'Arial', sans-serif;
+}
+
+.font-times-new-roman {
+    font-family: 'Times New Roman', serif;
+}
+
+.font-courier-new {
+    font-family: 'Courier New', monospace;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#checkButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#checkButton:hover {
+    background-color: #45a049;
+}
+
+#resultMessage,
+#justificationMessage {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.font-sample {
+    border: 3px solid transparent;
+    padding: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.font-sample:hover {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+}
+
+.font-sample.selected {
+    border-color: #4caf50;
+    background-color: #e8f5e9;
+    border-radius: 6px;
+}

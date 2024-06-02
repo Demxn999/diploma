@@ -1,0 +1,80 @@
+    h1,
+    h2,
+    p {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    h1 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    #instructions {
+        margin: 0 auto 150px auto;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        max-width: 600px;
+        text-align: left;
+    }
+
+    .task {
+        margin: 0 auto 150px auto;
+        background-color: #ffc107;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        max-width: 600px;
+        text-align: left;
+    }
+
+    #solution {
+        margin: 0 auto 150px auto;
+        background-color: #cddc39;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        max-width: 600px;
+        text-align: left;
+    }
+
+    input[type="text"] {
+        padding: 5px;
+        margin: 5px 0;
+        width: 20%;
+        border: 2px solid #007bff;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #output {
+        margin: 0 0 50px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+
+    }
+
+    #myBlock {
+        margin: 0 auto 150px auto;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+
+    #myBlock:hover {
+        transform: scale(1.1);
+    }

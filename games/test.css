@@ -1,0 +1,93 @@
+.container {
+    margin: 0 auto 150px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.options button {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #F0F0F0;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    color: #333;
+}
+
+.options button:hover {
+    background-color: #E0E0E0;
+}
+
+.options button.selected {
+    background-color: #007AFF;
+    color: white;
+}
+
+#question {
+    margin-bottom: 20px;
+}
+
+.result {
+    margin-top: 20px;
+    color: #333;
+}
+
+.buttons button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #007AFF;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+.warning {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+
+#nextBtn,
+#prevBtn,
+#resultBtn,
+#restartBtn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #007AFF;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#nextBtn:hover,
+#prevBtn:hover,
+#resultBtn:hover,
+#restartBtn:hover {
+    background-color: #0056b3;
+}
