@@ -20,10 +20,12 @@ h1 {
     margin-bottom: 10px;
 }
 
-* {
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .container {
@@ -36,7 +38,8 @@ h1 {
 #palette-img {
     max-width: 50%;
     height: auto;
-    margin-right: 20px;
+    margin-right: 2px;
+    margin-bottom: 2px;
 }
 
 #company-img {
@@ -70,15 +73,27 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 200px;
+    padding: 0 10px;
+    margin-bottom: 150px;
+}
+
+@media (max-width:480px) {
+    .options {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    h1 {
+        font-size: 20px;
+    }
 }
 
 .option {
-    margin: 0 10px;
+    margin: 10px;
     padding: 10px 20px;
     cursor: pointer;
     background-color: #f0f0f0;
     border-radius: 5px;
+    text-align: center;
 }
 
 .option:hover {
@@ -405,3 +420,4 @@ footer {
         justify-content: center;
     }
 }
+

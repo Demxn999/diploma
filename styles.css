@@ -105,6 +105,7 @@ a {
 body {
     font-family: 'Century Gothic', sans-serif;
     background-color: #070c27;
+   overflow-x: hidden;
 }
 
 nav {
@@ -347,6 +348,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+  padding: 0 20px;
 }
 
 .profile__card {
@@ -543,10 +545,12 @@ footer {
     cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
     .header__content {
+      max-width: 1000px;
         width: 100%;
         padding: 0 20px;
+
     }
 
     .header__image img {
@@ -574,6 +578,7 @@ footer {
 
     .profile__grid {
         grid-template-columns: 1fr;
+      
     }
 
     .footer__container {
@@ -585,13 +590,17 @@ footer {
     .task__header {
         flex-direction: column;
     }
+.header__content h1 {
+        font-size: 50px;
 
+    }
     .task__grid {
         grid-template-columns: 1fr;
     }
 
     .profile__grid {
         grid-template-columns: 1fr;
+
     }
 
 }
@@ -602,8 +611,9 @@ footer {
     }
 
     .header__content h1 {
-        font-size: 50px;
+        font-size: 40px;
         line-height: 60px;
+      max-width:200px;
     }
 
     .header__content p {
@@ -615,3 +625,28 @@ footer {
         font-size: 14px;
     }
 }
+@media (max-width: 768px) {
+    .profile__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .profile__grid {
+        padding: 0 0px; 
+    }
+
+    .profile__card {
+        padding: 24px 6px; 
+    }
+    .profile__card p {
+        margin: 10px 0; 
+    }
+   .footer-input-container button {
+    font-size:10px;}
+}
+  @media (max-width: 1100px){
+    
+  }
