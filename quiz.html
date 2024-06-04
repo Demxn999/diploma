@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка знаний</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <script src="../achievements.js"></script>
+    <script src="../menu.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            registerPageVisit('quiz.html');
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__logo">
+            <a href="../index.html"><img src="../assets/logo.svg" alt="logo" /></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="../about.html">О нас</a></li>
+            <li class="link"><a href="../profiles.html">Профили обучения</a></li>
+            <li class="link"><a href="../games.html">Тесты и игры</a></li>
+            <li class="link"><a href="#footer">Контакты</a></li>
+            <li class="link"><a href="../login/profile.php">Личный кабинет</a></li>
+        </ul>
+        <a class="btn_des" href="../login/register.php" class="btn">Зарегистрироваться</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav">
+            <ul class="mobile-nav__links">
+                <li class="link"><a href="../about.html">О нас</a></li>
+                <li class="link"><a href="../profiles.html">Профили обучения</a></li>
+                <li class="link"><a href="../games.html">Тесты и игры</a></li>
+                <li class="link"><a href="../login/profile.php">Личный кабинет</a></li>
+            </ul>
+            <a href="../login/register.php" class="btn">Зарегистрироваться</a>
+        </div>
+    </nav>
+    <h1>Тест на проверку знаний о программировании и дизайне</h1>
+    <div id="quiz">
+        <div class="question active" data-question="1">
+            <p>Какой из следующих языков программирования считается "языком сборки"?</p>
+            <label><input type="radio" name="q1" value="a"> Python</label><br>
+            <label><input type="radio" name="q1" value="b"> Java</label><br>
+            <label><input type="radio" name="q1" value="c"> Assembly</label><br>
+            <label><input type="radio" name="q1" value="d"> Ruby</label>
+        </div>
+        <div class="question" data-question="2">
+            <p>Что такое flexbox в CSS?</p>
+            <label><input type="radio" name="q2" value="a"> Система для управления сеткой</label><br>
+            <label><input type="radio" name="q2" value="b"> Модель для работы с отзывчивыми шрифтами</label><br>
+            <label><input type="radio" name="q2" value="c"> Модуль для построения гибких макетов</label><br>
+            <label><input type="radio" name="q2" value="d"> Фреймворк для работы с SVG</label>
+        </div>
+
+        <div class="question" data-question="3">
+            <p>Как называется метод JavaScript для добавления элементов в конец массива?</p>
+            <label><input type="radio" name="q3" value="a"> push()</label><br>
+            <label><input type="radio" name="q3" value="b"> pop()</label><br>
+            <label><input type="radio" name="q3" value="c"> shift()</label><br>
+            <label><input type="radio" name="q3" value="d"> unshift()</label>
+        </div>
+
+        <div class="question" data-question="4">
+            <p>Посмотрите на следующий фрагмент кода HTML. Что будет отображаться на странице?</p>
+            <pre><code>&lt;div class="box"&gt;
+    &lt;p&gt;Привет, мир!&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            <label><input type="radio" name="q4" value="a"> Текст "Привет, мир!" внутри div</label><br>
+            <label><input type="radio" name="q4" value="b"> Ничего не отображается</label><br>
+            <label><input type="radio" name="q4" value="c"> Только текст "Привет, мир!"</label><br>
+            <label><input type="radio" name="q4" value="d"> Элемент div без текста</label>
+        </div>
+
+        <div class="question" data-question="5">
+            <p>Какой из следующих инструментов не является редактором графики?</p>
+            <label><input type="radio" name="q5" value="a"> Adobe Photoshop</label><br>
+            <label><input type="radio" name="q5" value="b"> CorelDRAW</label><br>
+            <label><input type="radio" name="q5" value="c"> Sublime Text</label><br>
+            <label><input type="radio" name="q5" value="d"> GIMP</label>
+        </div>
+
+        <div class="question" data-question="6">
+            <p>Напишите CSS правило для изменения цвета текста всех абзацев на синий.</p>
+            <textarea name="q6" rows="2" cols="50"></textarea>
+        </div>
+
+        <div class="question" data-question="7">
+            <p>Какие из следующих методов являются методами строк в Python? (выберите все, что применимо)</p>
+            <label><input type="checkbox" name="q7" value="a"> split()</label><br>
+            <label><input type="checkbox" name="q7" value="b"> join()</label><br>
+            <label><input type="checkbox" name="q7" value="c"> append()</label><br>
+            <label><input type="checkbox" name="q7" value="d"> replace()</label>
+        </div>
+
+        <div class="question" data-question="8">
+            <p>Напишите строку кода на Python, которая выводит "Hello, World!" на экран.</p>
+            <textarea name="q8" rows="2" cols="50"></textarea>
+        </div>
+
+        <div class="question" data-question="9">
+            <p>Какие из следующих методов используются для чтения данных из файлов в Python? (выберите все, что
+                применимо)</p>
+            <label><input type="checkbox" name="q9" value="a"> read()</label><br>
+            <label><input type="checkbox" name="q9" value="b"> write()</label><br>
+            <label><input type="checkbox" name="q9" value="c"> readline()</label><br>
+            <label><input type="checkbox" name="q9" value="d"> readlines()</label>
+        </div>
+
+        <div class="question" data-question="10">
+            <p>Какое из следующих утверждений верно относительно цветовой теории? (выберите все, что применимо)</p>
+            <label><input type="checkbox" name="q10" value="a"> Комплементарные цвета находятся напротив друг друга на
+                цветовом круге</label><br>
+            <label><input type="checkbox" name="q10" value="b"> Аналогичные цвета находятся рядом друг с другом на
+                цветовом круге</label><br>
+            <label><input type="checkbox" name="q10" value="c"> Монохромные цвета содержат только один цвет и его
+                оттенки</label><br>
+            <label><input type="checkbox" name="q10" value="d"> Основные цвета - это красный, зеленый и синий</label>
+        </div>
+
+        <div class="button-container">
+            <button onclick="prevQuestion()">Предыдущий вопрос</button>
+            <button onclick="nextQuestion()">Следующий вопрос</button>
+            <button onclick="showResult()">Показать результат</button>
+        </div>
+
+        <p id="warning" style="color: red; display: none;">Вы не ответили на все вопросы.</p>
+    </div>
+    <div id="result" class="result">
+        <p id="resultText"></p>
+        <button class="result-btn" onclick="restartQuiz()">Начать заново</button>
+    </div>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo"><img src="../assets/logo2.svg" alt="logo" /></div>
+
+                <div class="footer-description">
+                    Будьте в курсе всех новостей!<br>
+                    Мероприятия, обновления, полезная информация
+                </div>
+                <div class="footer-input-container">
+                    <input type="email" placeholder="Введите ваш email">
+                    <button>Подписаться</button>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://vk.com/fsirigu" target="_blank">
+                        <img src="../assets/vk.svg">
+                    </a>
+                    <a href="https://web.telegram.org/#/im?p=@fbki_isu" target="_blank">
+                        <img src="../assets/tg.svg">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCyPYCqcUuWRPH3dFAS7wP5Q" target="_blank">
+                        <img src="../assets/yt.svg">
+                    </a>
+                </div>
+                <div class="address">
+                    <div>Иркутск, ул.Лермонтова 126,
+                        6-й корпус ИГУ</div>
+                    <div>+7 (3952) 42‑64‑17
+                    </div>
+                    <div><a href="mailto:dekanat@fbki.isu.ru">dekanat@fbki.isu.ru</a></div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">1</span>
+                        <a href="../index.html">Главная</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">2</span>
+                        <a href="../about.html">О нас</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">3</span>
+                        <a href="../profiles.html">Профили обучения</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">4</span>
+                        <a href="../games.html">Тесты и игры</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <span class="footer-menu-number">5</span>
+                        <a href="../login/profile.php">Личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
