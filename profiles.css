@@ -227,7 +227,6 @@ a {
 @media (width < 768px) {
     .nav__links {
         display: none;
-
     }
 
     .footer__container {
@@ -249,6 +248,7 @@ footer {
     background-color: #F6F6EF;
     color: var(--primary-color);
     padding: 40px 20px;
+    font-family: 'Century Gothic', sans-serif;
 }
 
 .footer-container {
